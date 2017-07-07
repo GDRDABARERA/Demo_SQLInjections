@@ -8,7 +8,7 @@
     try {
         String sqlQurty = "SELECT * FROM APP_PRODUCT";
         if(request.getParameter("q") != null && request.getParameter("q").length() > 0) {
-            sqlQurty = sqlQurty + " where APP_PROODUCT_NAME='" + request.getParameter("q") + "'";
+            sqlQurty = sqlQurty + " where APP_PRODUCT_NAME='" + request.getParameter("q") + "'";
         }
         java.sql.PreparedStatement pstmt = connection.prepareStatement(sqlQurty);
         System.out.println(sqlQurty);
