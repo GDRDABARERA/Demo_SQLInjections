@@ -22,7 +22,7 @@
             out.println("Support team will contact you shortly...");
         }
     } catch (Exception e) {
-        out.println("Exception occurred ");
+        out.println("Support team will contact you shortly...");
     } finally {
         connection.close();
     }
